@@ -13,6 +13,7 @@ func main() {
 	router := gin.Default()
 	routes.UserRoutes(router)
 	routes.RoleRoutes(router)
+	routes.GenreRoutes(router)
 
 	router.Run(":3000")
 }
