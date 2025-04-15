@@ -16,6 +16,7 @@ func main() {
 	routes.GenreRoutes(router)
 	routes.ActorRoutes(router)
 	routes.DirectorRoutes(router)
+	routes.MovieRoutes(router)
 
 	router.Run(":3000")
 }
