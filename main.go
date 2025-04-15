@@ -14,6 +14,8 @@ func main() {
 	routes.UserRoutes(router)
 	routes.RoleRoutes(router)
 	routes.GenreRoutes(router)
+	routes.ActorRoutes(router)
+	routes.DirectorRoutes(router)
 
 	router.Run(":3000")
 }
