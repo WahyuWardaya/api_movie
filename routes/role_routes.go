@@ -9,10 +9,10 @@ import (
 func RoleRoutes(router *gin.Engine) {
 	users := router.Group("/roles")
 	{
-		users.GET("", controllers.GetUsers)
-		users.POST("", controllers.CreateUser)
-		users.GET("/:id", controllers.GetUserByID)
-		users.PUT("/:id", controllers.UpdateUsers)
-		users.DELETE("/:id", controllers.DeleteUsers)
+		users.GET("", controllers.GetRoles)
+		users.POST("", controllers.CreateRoles)
+		users.GET("/:id", controllers.GetRolesByID)
+		users.PUT("/:id", controllers.UpdateRoles)
+		users.DELETE("/:id", controllers.DeleteRoles)
 	}
 }
